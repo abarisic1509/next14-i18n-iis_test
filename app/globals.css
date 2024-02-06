@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-blueZ-80 bg-neutralZ-10;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-label {
+    @apply font-poppins font-normal text-base leading-5;
+    letter-spacing: 5%;
+  }
+
+  .btn-pill {
+    @apply rounded-full py-2 px-6 bg-primary-400 hover:bg-primary-500;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+  }
+}
